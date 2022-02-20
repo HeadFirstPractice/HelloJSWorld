@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Beer on the Wall</title>
+  </head>
+  <body>
+    <script>
+      var word = "bottles";
+      var wordSingular = "bottle";
+      var count = "99";
+      while (count >= 0) {
+        if (count > 1) {
+          console.log(count  + " " + word + " of beer on the wall.");
+          console.log(count + " " + word + " of beer on the wall");
+          console.log(count + " " + word + " of beer,");
+          console.log("Take one down, pass it around,");
+        }
+        else if (count == 1) {
+          console.log(count + " " + wordSingular + " of beer on the wall.");
+          console.log(count + " " + wordSingular + " of beer on the wall");
+          console.log(count + " " + wordSingular + " of beer,");
+          console.log("Take one down, pass it around,");
+        }
+        else {
+          console.log("No more " + word + " of beer on the wall.");
+        }
+        count = count - 1;
+      }
+    </script>
+  </body>
+</html>
